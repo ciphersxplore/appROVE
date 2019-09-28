@@ -12,8 +12,24 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.admin');
+    return view('admin.landing');
 });
+
+Route::get('/residents', function () {
+    return view('admin.users.view.residents');
+});
+Route::get('/employers', function () {
+    return view('admin.users.view.employers');
+});
+
+Route::get('/admins', function () {
+    return view('admin.users.view.admin');
+});
+
+Route::get('/create/user', function () {
+    return view('admin.users.create.user');
+});
+
 
 Auth::routes();
 

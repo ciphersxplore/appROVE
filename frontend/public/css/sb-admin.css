@@ -10912,3 +10912,9 @@ body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
 }
+.form-container{
+  border-radius: 25px;
+  border: 2px solid #D99441;
+  padding: 5%;
+  margin: 10%;
+}

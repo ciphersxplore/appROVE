@@ -5,10 +5,13 @@ const JobSchema = new Schema({
   jobTitle: String,
   employer: String,
   location: String,
-  requirement: {
-    certification: String
-  },
-  salary: String
+  requirement: String,
+  salary: Number,
+  applicant: [
+    {
+      name: String
+    }
+  ]
 });
 
 module.exports = mongoose.model("Job", JobSchema);
