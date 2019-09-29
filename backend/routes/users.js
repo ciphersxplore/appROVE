@@ -25,12 +25,14 @@ router.post("/", async (req, res) => {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       contactNumber: req.body.contactNumber,
+      email: req.body.email,
       age: req.body.age,
       gender: req.body.gender,
-      address: req.body.address,
+      img_path: req.body.img_path,
+      password: req.body.password,
       skills: req.body.skills,
-      userType: req.body.userType,
-      status: req.body.status,
+      userType: "residents",
+      status: "active",
       isHired: req.body.isHired
     });
 

@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Exception\RequestException;
+use Session;
 
 class TrainingController extends Controller
 {
@@ -14,6 +19,14 @@ class TrainingController extends Controller
     public function index()
     {
         //
+    }
+
+    public function enroll(Request $request, $id)
+    {
+        $request->training_id;
+
+        $client = new Client;
+        $response = $client->put("http://localhost:3000/api/trainings/{$id}";
     }
 
     /**
@@ -34,7 +47,7 @@ class TrainingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    
     }
 
     /**

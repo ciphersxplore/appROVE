@@ -26,7 +26,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="index.html"><img class="img-fluid" src="{{ asset('image/name.png') }}" width="140px"></a>
+    <a class="navbar-brand mr-1" href="{{ url('/layouts/admin') }}"><img class="img-fluid" src="{{ asset('image/name.png') }}" width="140px"></a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -39,7 +39,7 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ url('/layouts/admin') }}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
@@ -51,7 +51,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">View Screens:</h6>
-          <a class="dropdown-item" href="login.html">Residents</a>
+          <a class="dropdown-item" href="{{ url('/layouts/admin') }}">Residents</a>
           <a class="dropdown-item" href="register.html">Admins</a>
           <a class="dropdown-item" href="forgot-password.html">Employers</a>
           <div class="dropdown-divider"></div>
@@ -67,8 +67,7 @@
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <h6 class="dropdown-header">View Screens:</h6>
           <a class="dropdown-item" href="register.html">All Jobs</a>
-          <a class="dropdown-item" href="forgot-password.html">Job Postings</a>
-          <a class="dropdown-item" href="forgot-password.html">Applicants</a>
+          <a class="dropdown-item" href="forgot-password.html">Job Posted</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Create Screen:</h6>
           <a class="dropdown-item" href="404.html">Job Posting</a>

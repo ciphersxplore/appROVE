@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const ScheduleSchema = new Schema({
-  scheduleNumber: Number,
+  plateNumber: String,
   departureTime: String,
   departureLocation: String,
   arrivalTime: String,

@@ -1,0 +1,122 @@
+/*Map*/
+.feedback {
+    background-color: #59b0ba;
+    height: 100%;
+    width: 100%;
+}
+
+.cover {
+    background-color: white;
+    opacity: 1.5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h {
+    height: 50px;
+}
+
+.footer {
+    background: #51bda9;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+#approvelogo {
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#navlogo {
+    border-bottom: 2px solid #ff3333;
+    background-color: #f2f2f2;
+    padding: 2px;
+}
+
+.navbar {
+    background-color: rgba(15, 14, 14, 0.75);
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    z-index: -1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#profilepic {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 35%;
+    border-radius: 100px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.profileinfo {
+    margin-top: 90px;
+    padding-left: 20px;
+    height: 40%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 1;
+}
+.card {
+    border-radius: 15px;
+}
+
+.personalInfo {
+    color: #999;
+    font-size: 7pt !important;
+}
+
+.nameTag {
+    color: #999;
+}
+
+body {
+    background-image: url("/image/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cstatus {
+    float: left;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+#profilename {
+    color: white;
+    margin-left: 25px;
+}
+
+#profileemail {
+    color: white;
+    margin-left: 20px;
+}
+
+a {
+    color: white !important;
+}

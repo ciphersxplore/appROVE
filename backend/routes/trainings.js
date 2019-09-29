@@ -18,7 +18,6 @@ router.get("/:id", async (req, res) => {
 //Create an instance of job object and save it to db
 router.post("/", async (req, res) => {
   let training = TrainingModel({
-    trainingCode: req.body.trainingCode,
     trainingTitle: req.body.trainingTitle,
     location: req.body.location,
     schedule: req.body.schedule,
@@ -33,10 +32,10 @@ router.post("/", async (req, res) => {
 router.put("/:id", async (req, res) => {
   let training = await TrainingModel.findById(req.params.id);
 
-  training.trainingCode = req.body.slotCode;
-  training.trainingTitle = req.body.dimensions;
-  training.location = req.body.employer;
+  training.trainingTitle = req.body.trainingTitle;
+  training.location = req.body.location;
   training.schedule = req.body.schedule;
+  training.applicants = req.body.applicants;
 
   training = await training.save();
   res.send(training);

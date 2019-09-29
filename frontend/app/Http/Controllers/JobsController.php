@@ -18,7 +18,13 @@ class JobsController extends Controller
      */
     public function index()
     {
-        //
+        $client = new Client();
+        $response = $client->get("https://localhost:3000/api/jobs/");
+        $jobs = json_decode($response->getBody());
+
+        dd($jobs);
+        return view('jobs.index', compact('jobs'));
+
     }
 
     /**

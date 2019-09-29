@@ -2,10 +2,7 @@
 
 @section('content')
 
-
 <body>
-
-
     <div class="sticky-top">
         <ul class="nav" id="navlogo">
             <li class="nav-item">

@@ -15,7 +15,7 @@ appROVE
                 <div class="card-body-icon">
                   <i class="fa fa-users" aria-hidden="true"></i>
                 </div>
-                <div class="mr-5">26 Active Workers!</div>
+                <div class="mr-5">26 Active Users!</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
                 <span class="float-left">View Details</span>
